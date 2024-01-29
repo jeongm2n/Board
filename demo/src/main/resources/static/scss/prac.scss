@@ -1,8 +1,17 @@
+$family: unquote("Droid+Sans");
+@import url("http://fonts.googleapis.com/css?family=#{$family}");
 $color : red;
 
 h1{
     color : $color;
 }
 
-$family: unquote("Droid+Sans");
-@import url("http://fonts.googleapis.com/css?family=#{$family}");
+.section {
+    width: 100%;
+    list {
+      padding: 20px;
+      li {
+        float: left;
+      }
+    }
+}

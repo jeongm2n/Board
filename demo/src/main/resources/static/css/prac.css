@@ -2,3 +2,13 @@
 h1 {
   color: red;
 }
+
+.section {
+  width: 100%;
+}
+.section list {
+  padding: 20px;
+}
+.section list li {
+  float: left;
+}
