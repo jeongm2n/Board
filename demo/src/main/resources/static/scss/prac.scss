@@ -15,3 +15,15 @@ h1{
       }
     }
 }
+
+.btn{
+    background-color : $color;
+
+    &:hover{
+        background-color: salmon;
+    }
+
+    &.active{
+        background-color: bisque;
+    }
+}

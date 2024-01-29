@@ -12,3 +12,13 @@ h1 {
 .section list li {
   float: left;
 }
+
+.btn {
+  background-color: red;
+}
+.btn:hover {
+  background-color: salmon;
+}
+.btn.active {
+  background-color: bisque;
+}
