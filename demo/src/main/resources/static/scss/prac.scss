@@ -57,3 +57,10 @@ h1{
 .div2 {
     width : 0px + myfunc(20,20);
 }
+
+/* if 연습 */
+$w : 200px;
+
+.div3{
+    width : if($w > 100px, 200px, null);
+}
