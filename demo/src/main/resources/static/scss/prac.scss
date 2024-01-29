@@ -88,3 +88,16 @@ $w : 200px;
 .anything{
     @include text2('anything');
 }
+
+/* 반복문 연습 */
+@for $i from 1 through 3 {
+    .through:nth-child(#{$i}) {
+      width: 20px * $i;
+    }
+  }
+  
+  @for $i from 1 to 3 {
+    .to:nth-child(#{$i}) {
+      width: 20px * $i;
+    }
+  }
