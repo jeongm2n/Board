@@ -1,8 +1,11 @@
+@charset "UTF-8";
+/* 변수 연습 */
 @import url("http://fonts.googleapis.com/css?family=Droid+Sans");
 h1 {
   color: red;
 }
 
+/* 중첩문 연습 */
 .section {
   width: 100%;
 }
@@ -13,6 +16,7 @@ h1 {
   float: left;
 }
 
+/* & 키워드 연습 */
 .btn {
   background-color: red;
 }
@@ -23,6 +27,7 @@ h1 {
   background-color: bisque;
 }
 
+/* mixin, inclue 연습 */
 .li {
   font-size: 16pt;
   font-weight: bold;
@@ -30,4 +35,9 @@ h1 {
 }
 .li:hover {
   color: salmon;
+}
+
+/* 함수 연습 */
+.div2 {
+  width: 400px;
 }
