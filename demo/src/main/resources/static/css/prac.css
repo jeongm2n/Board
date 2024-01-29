@@ -22,3 +22,12 @@ h1 {
 .btn.active {
   background-color: bisque;
 }
+
+.li {
+  font-size: 16pt;
+  font-weight: bold;
+  color: red;
+}
+.li:hover {
+  color: salmon;
+}

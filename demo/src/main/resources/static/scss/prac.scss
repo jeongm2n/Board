@@ -27,3 +27,20 @@ h1{
         background-color: bisque;
     }
 }
+
+@mixin text{
+    font: {
+        size : 16pt;
+        weight : bold;
+    }
+
+    color : $color;
+
+    &:hover{
+        color: salmon;
+    }
+}
+
+.li{
+    @include text;
+}
