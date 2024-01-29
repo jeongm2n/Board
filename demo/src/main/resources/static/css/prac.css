@@ -46,3 +46,21 @@ h1 {
 .div3 {
   width: 200px;
 }
+
+.no {
+  font-size: 20pt;
+  font-weight: bold;
+  color: red;
+}
+
+.yes {
+  font-size: 20pt;
+  font-weight: bold;
+  color: green;
+}
+
+.anything {
+  font-size: 20pt;
+  font-weight: bold;
+  color: blue;
+}
