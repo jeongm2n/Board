@@ -85,3 +85,27 @@ h1 {
 .to:nth-child(2) {
   width: 40px;
 }
+
+.img {
+  background-image: url("cat.img");
+}
+
+.img {
+  background-image: url("dog.img");
+}
+
+.img {
+  background-image: url("lion.img");
+}
+
+h1 {
+  font-size: 4em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1em;
+}

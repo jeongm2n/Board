@@ -101,3 +101,15 @@ $w : 200px;
       width: 20px * $i;
     }
   }
+
+@each $animal in cat, dog, lion{
+    .img{
+        background-image: url("#{$animal}.img");
+    }
+}
+
+@each $header, $size in (h1:4em, h2:2em, h3:1em){
+    #{$header}{
+        font-size : $size;
+    }
+}
