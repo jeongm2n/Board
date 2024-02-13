@@ -8,8 +8,18 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class BoardController {
     
     
-    @GetMapping("/first")
-    public String first(Model model){
-        return "board";
+    @GetMapping("/main")
+    public String every(Model model){
+        return "main";
+    }
+
+    @GetMapping("/writepage")
+    public String write(Model model){
+        return "writepage";
+    }
+
+    @GetMapping("/delpage")
+    public String delete(Model model){
+        return "delpage";
     }
 }

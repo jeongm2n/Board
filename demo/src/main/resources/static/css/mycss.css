@@ -6,3 +6,10 @@
 .nav-tabs{
     background-color: indigo;
 }
+
+#div1{
+    margin-top: 50px;
+    width: 80%;
+    margin-left: 9%;
+    margin-right: 9%;
+}
