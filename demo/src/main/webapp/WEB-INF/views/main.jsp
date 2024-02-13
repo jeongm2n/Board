@@ -1,4 +1,4 @@
-{{>layouts/header}}
+<%@ include file="./layouts/header.jsp">
   <div id=div1>
     <table class="table">
     <thead>
@@ -8,4 +8,4 @@
     </thead>
     </table>
   </div>
-{{>layouts/footer}}
+<%@ include file="./layouts/footer.jsp">

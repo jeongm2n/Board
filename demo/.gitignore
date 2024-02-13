@@ -35,6 +35,3 @@ out/
 
 ### VS Code ###
 .vscode/
-
-### DB 설정 가리기
-/src/main/resources/application-secret.properties
