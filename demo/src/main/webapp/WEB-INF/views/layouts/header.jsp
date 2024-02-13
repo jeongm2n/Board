@@ -1,6 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
-<!doctype html>
-<html>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <head>
     <meta charset="utf-8">
     <title>Bootstrap demo</title>
@@ -8,8 +6,6 @@
     integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/mycss.css">
   </head>
-<body id=wrap>
-
 <header>
     <ul class="nav justify-content-center nav-tabs">
         <li class="nav-item">
