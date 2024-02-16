@@ -5,6 +5,7 @@
 <!doctype html>
 <html>
 <%@ include file="./layouts/header.jsp" %>
+
 <body id=wrap>
   <div id=div1>
     <table class="table" style="text-align: center; width:100%">
@@ -21,7 +22,7 @@
       <c:otherwise>
         <c:forEach var="item" items="${writingList}">
           <tr>
-          <td>${item.no}</td><td>${item.title}</td><td>${item.writer}</td><td>${item.write_date}</td>
+          <td>${item.no}</td><td><a href="/detail?no=${item.no}">${item.title}</a></td><td>${item.writer}</td><td>${item.write_date}</td>
           </tr>
         </c:forEach>
       </c:otherwise>
