@@ -9,7 +9,7 @@
 <header>
     <ul class="nav justify-content-center nav-tabs">
         <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="/">전체글보기</a>
+            <a class="nav-link active" aria-current="page" href="/main">전체글보기</a>
         </li>
         <li class="nav-item">
             <a class="nav-link" href="/writepage">글쓰기</a>

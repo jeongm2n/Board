@@ -1,5 +1,7 @@
 package com.board.demo.Entity;
 
+import org.hibernate.annotations.CreationTimestamp;
+
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -23,21 +25,9 @@ public class Writing {
     private String contents;
     @Column
     private String writer;
+
+    @CreationTimestamp
     @Column
     private String write_date;
 
-    public void patch(Writing writing) {
-        if(writing.title != null){
-            this.title = writing.title;
-        }
-        if(writing.contents != null){
-            this.contents = writing.contents;
-        }
-        if(writing.writer != null){
-            this.writer = writing.writer;
-        }
-        if(writing.write_date != null){
-            this.write_date = writing.write_date;
-        }
-    }
 }

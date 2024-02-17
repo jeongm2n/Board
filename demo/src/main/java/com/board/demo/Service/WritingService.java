@@ -18,4 +18,8 @@ public class WritingService {
     public List<Writing> index() {
         return writingRepo.findAll();
     }
+
+    public Writing detail(long no){
+        return writingRepo.findById(no).orElse(null);
+    }
 }

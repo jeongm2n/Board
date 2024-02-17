@@ -9,12 +9,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
 import java.util.List;
-import java.util.Optional;
 
 @Controller
 public class BoardController {
@@ -23,7 +22,7 @@ public class BoardController {
     @Autowired
     private WritingRepo writingRepo;
     
-    @GetMapping("/")
+    @GetMapping("/main")
     public ModelAndView every(Model model){
         ModelAndView mav = new ModelAndView();
 
@@ -50,7 +49,7 @@ public class BoardController {
     }
 
     @GetMapping("/writepage")
-    public String write(Model model){
+    public String writepage(Model model){
         return "writepage";
     }
 
@@ -58,4 +57,17 @@ public class BoardController {
     public String delete(Model model){
         return "delpage";
     }
+
+    @PostMapping("/writepage/write")
+    public String write(BoardDTO bDto) {
+
+        //DTO를 Entity로 변환
+        Writing writing = bDto.toEntity();
+
+        //DB에 저장
+        writingRepo.save(writing);
+
+        return "redirect:/main";
+    }
+    
 }

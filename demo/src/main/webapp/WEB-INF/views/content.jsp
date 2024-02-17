@@ -12,7 +12,7 @@
           <hr>
           <h3 class="card-subtitle mb-2 text-muted" style="text-align: left;"><font style="font-size:10pt">작성자</font><br>${data.writer}</h3>
           <p style="text-align: right;font-size:10pt">작성일자<br>${data.write_date}</p><br><br>
-          <p class="card-text">${data.contents}</p>
+          <p class="card-text" style="font-size: medium;">${data.contents}</p>
         </div>
       </div>
 <%@ include file="./layouts/footer.jsp" %>
