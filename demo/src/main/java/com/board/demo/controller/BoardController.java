@@ -54,8 +54,18 @@ public class BoardController {
     }
 
     @GetMapping("/delpage")
-    public String delete(Model model){
-        return "delpage";
+    public ModelAndView deletepage(Model model){
+        ModelAndView mav = new ModelAndView();
+
+        //1. 모든 데이터 가져오기
+        List<Writing> writingEntityList = wrService.index();
+
+        //2. 모델에 데이터 등록하기
+        model.addAttribute("writingList",writingEntityList);
+
+        mav.setViewName("delpage");
+        //3. 뷰 페이지 설정하기
+        return mav;
     }
 
     @PostMapping("/writepage/write")
@@ -68,6 +78,24 @@ public class BoardController {
         writingRepo.save(writing);
 
         return "redirect:/main";
+    }
+
+    @GetMapping("delpage/delete")
+    public ModelAndView delete(@RequestParam("no") long no){
+
+        wrService.delete(no);
+
+        ModelAndView mav = new ModelAndView();
+
+        //1. 모든 데이터 가져오기
+        List<Writing> writingEntityList = wrService.index();
+
+        //2. 모델에 데이터 등록하기
+        mav.addObject("writingList",writingEntityList);
+
+        mav.setViewName("delpage");
+
+        return mav;
     }
     
 }

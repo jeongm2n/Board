@@ -8,8 +8,9 @@
 <head>
     <meta charset="utf-8">
     <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" 
-    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">-->
+    <link rel="stylesheet" href="/css/custom.css">
     <link rel="stylesheet" href="/css/mycss.css">
   </head>
   <script>
@@ -23,13 +24,13 @@
 <header>
     <ul class="nav justify-content-center nav-tabs">
         <li class="nav-item">
-            <a class="nav-link" id="li1" href="/main?page_no=1">전체글보기</a>
+            <a class="nav-link" id="li1" href="/main?page_no=1" style="color:black">전체글보기</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" id="li2" href="/writepage?page_no=2">글쓰기</a>
+            <a class="nav-link" id="li2" href="/writepage?page_no=2" style="color:black">글쓰기</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" id="li3" href="/delpage?page_no=3">글삭제</a>
+            <a class="nav-link" id="li3" href="/delpage?page_no=3" style="color:black">글삭제</a>
         </li>
     </ul>
   </header>
