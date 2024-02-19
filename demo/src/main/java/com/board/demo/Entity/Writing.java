@@ -22,7 +22,7 @@ public class Writing {
     @Column
     private String title;
     @Column
-    private String contents;
+    private String content;
     @Column
     private String writer;
 

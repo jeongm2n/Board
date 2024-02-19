@@ -14,6 +14,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
 import java.util.List;
+import org.springframework.web.bind.annotation.RequestBody;
+
 
 @Controller
 public class BoardController {
@@ -97,5 +99,12 @@ public class BoardController {
 
         return mav;
     }
+
+    @PostMapping("/updatepage")
+    public String updatepage() {
+        //TODO: process POST request
+        return "updatepage";
+    }
+    
     
 }
