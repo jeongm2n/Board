@@ -105,6 +105,22 @@ public class BoardController {
         //TODO: process POST request
         return "updatepage";
     }
+
+    @PostMapping("/update")
+    public String update(BoardDTO bDto) {
+        //TODO: process POST request
+
+        Writing writed = bDto.toUpdateEntity();
+
+        Writing target = writingRepo.findById(writed.getNo()).orElse(null);
+
+        if(target != null){
+            writingRepo.save(writed);
+        }
+        
+        return "redirect:/detail?no="+writed.getNo();
+    }
+    
     
     
 }

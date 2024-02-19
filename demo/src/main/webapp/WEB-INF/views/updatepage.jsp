@@ -9,7 +9,7 @@
 %>
 <script>
     function onClick(){
-        alert(document.getElementById("content").value);
+        alert(document.getElementById("no").value);
         if(!document.getElementById("title").value || !document.getElementById("writer").value || !document.getElementById("content").value){
             alert('빈칸을 입력해주세요!');
             return false;
@@ -30,7 +30,7 @@
     <div class="card" style="width:80%;margin-top:100px;margin-left:10%;margin-right:10%;margin-bottom:50px">
         <div class="indiv">
         <form id="updateForm" action="/update" method="POST">
-            <input type="hidden" name="no" value="<%=no %>">
+            <input type="hidden" name="no" id="no" value="<%=no %>">
             <input type="text" class="titletext" name="title" id="title" placeholder="제목을 입력하세요." value="<%=title %>">
             <hr>
             <input type="text" class="writertext" name="writer" id="writer" placeholder="사용자 설정 아이디를 입력해주세요." value="<%=writer %>">
