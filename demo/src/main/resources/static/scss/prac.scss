@@ -1,0 +1,115 @@
+/* 변수 연습 */
+$family: unquote("Droid+Sans");
+@import url("http://fonts.googleapis.com/css?family=#{$family}");
+$color : red;
+
+h1{
+    color : $color;
+}
+
+/* 중첩문 연습 */
+.section {
+    width: 100%;
+    list {
+      padding: 20px;
+      li {
+        float: left;
+      }
+    }
+}
+
+/* & 키워드 연습 */
+.btn{
+    background-color : $color;
+
+    &:hover{
+        background-color: salmon;
+    }
+
+    &.active{
+        background-color: bisque;
+    }
+}
+
+/* mixin, inclue 연습 */
+@mixin text{
+    font: {
+        size : 16pt;
+        weight : bold;
+    }
+
+    color : $color;
+
+    &:hover{
+        color: salmon;
+    }
+}
+
+.li{
+    @include text;
+}
+
+/* 함수 연습 */
+@function myfunc($var1, $var2){
+    @return $var1 * $var2;
+}
+
+.div2 {
+    width : 0px + myfunc(20,20);
+}
+
+/* if 연습 */
+$w : 200px;
+
+.div3{
+    width : if($w > 100px, 200px, null);
+}
+
+@mixin text2($str){
+    font: {
+        size : 20pt;
+        weight : bold; 
+    }
+    @if $str == 'no'{
+        color : red;
+    }@else if $str == 'yes'{
+        color : green;
+    }@else{
+        color : blue;
+    }
+}
+
+.no{
+    @include text2('no');
+}
+.yes{
+    @include text2('yes');
+}
+.anything{
+    @include text2('anything');
+}
+
+/* 반복문 연습 */
+@for $i from 1 through 3 {
+    .through:nth-child(#{$i}) {
+      width: 20px * $i;
+    }
+  }
+  
+  @for $i from 1 to 3 {
+    .to:nth-child(#{$i}) {
+      width: 20px * $i;
+    }
+  }
+
+@each $animal in cat, dog, lion{
+    .img{
+        background-image: url("#{$animal}.img");
+    }
+}
+
+@each $header, $size in (h1:4em, h2:2em, h3:1em){
+    #{$header}{
+        font-size : $size;
+    }
+}

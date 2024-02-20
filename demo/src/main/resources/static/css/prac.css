@@ -1,0 +1,111 @@
+@charset "UTF-8";
+/* 변수 연습 */
+@import url("http://fonts.googleapis.com/css?family=Droid+Sans");
+h1 {
+  color: red;
+}
+
+/* 중첩문 연습 */
+.section {
+  width: 100%;
+}
+.section list {
+  padding: 20px;
+}
+.section list li {
+  float: left;
+}
+
+/* & 키워드 연습 */
+.btn {
+  background-color: red;
+}
+.btn:hover {
+  background-color: salmon;
+}
+.btn.active {
+  background-color: bisque;
+}
+
+/* mixin, inclue 연습 */
+.li {
+  font-size: 16pt;
+  font-weight: bold;
+  color: red;
+}
+.li:hover {
+  color: salmon;
+}
+
+/* 함수 연습 */
+.div2 {
+  width: 400px;
+}
+
+/* if 연습 */
+.div3 {
+  width: 200px;
+}
+
+.no {
+  font-size: 20pt;
+  font-weight: bold;
+  color: red;
+}
+
+.yes {
+  font-size: 20pt;
+  font-weight: bold;
+  color: green;
+}
+
+.anything {
+  font-size: 20pt;
+  font-weight: bold;
+  color: blue;
+}
+
+/* 반복문 연습 */
+.through:nth-child(1) {
+  width: 20px;
+}
+
+.through:nth-child(2) {
+  width: 40px;
+}
+
+.through:nth-child(3) {
+  width: 60px;
+}
+
+.to:nth-child(1) {
+  width: 20px;
+}
+
+.to:nth-child(2) {
+  width: 40px;
+}
+
+.img {
+  background-image: url("cat.img");
+}
+
+.img {
+  background-image: url("dog.img");
+}
+
+.img {
+  background-image: url("lion.img");
+}
+
+h1 {
+  font-size: 4em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1em;
+}
